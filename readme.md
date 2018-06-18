@@ -12,6 +12,8 @@ What things you need to install the software and how to install them
 
 ```
 Node.js
+```
+```
 GULP
 ```
 
@@ -29,11 +31,6 @@ Run GULP
 
 ```
 gulp
-```
-Run GULP SASS Watch
-
-```
-gulp sass
 ```
 
 ## Authors
