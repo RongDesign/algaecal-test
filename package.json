@@ -1,0 +1,13 @@
+{
+  "name": "algaecal",
+  "version": "1.0.0",
+  "description": "Example site for AlgaeCal job application.",
+  "main": "gulpfile.js",
+  "author": "David A Moore III",
+  "license": "ISC",
+    "devDependencies":{
+        "gulp": "*",
+        "gulp-plumber": "*",
+        "gulp-sass": "*"
+    }
+}
