@@ -10,6 +10,28 @@ h1, h2, h3, h4, h5, h6 {
 strong {
   font-weight: 600; }
 
+.tap-to-talk {
+  font-weight: 600;
+  display: block;
+  font-size: 150%; }
+  .tap-to-talk a {
+    color: #008ba4; }
+
+.bone-health-specialist {
+  font-size: 105%;
+  line-height: 2; }
+  .bone-health-specialist img {
+    position: relative;
+    top: -2px; }
+
+.white-line {
+  display: inline-block;
+  height: 7px;
+  border-bottom: 4px solid #ffffff;
+  width: 50px;
+  position: relative;
+  top: -8px; }
+
 .hero-green {
   background-image: url(../../../images/hero-green-01.png);
   background-position: center center;
@@ -17,6 +39,11 @@ strong {
   .hero-green h1 {
     color: #ffffff;
     font-size: 160%; }
+    .hero-green h1 .custom-underlne {
+      background-image: url(../../../images/custom-underline.png);
+      background-position: left bottom;
+      background-repeat: repeat-x;
+      padding-bottom: 5px; }
 
 .message {
   font-size: 130%;
@@ -83,48 +110,6 @@ strong {
       background-color: #000000;
       border-bottom-color: #757575; }
 
-.custom-underlne {
-  background-image: url(../../../images/custom-underline.png);
-  background-position: left bottom;
-  background-repeat: repeat-x;
-  padding-bottom: 5px; }
-
-.tap-to-talk {
-  font-weight: 600;
-  display: block;
-  font-size: 150%; }
-  .tap-to-talk a {
-    color: #008ba4; }
-
-.bone-health-specialist {
-  font-size: 105%;
-  line-height: 2; }
-  .bone-health-specialist img {
-    position: relative;
-    top: -2px; }
-
-.guarantee {
-  background-color: #ffffff;
-  width: 100%; }
-  .guarantee h3 {
-    color: #e87b15;
-    font-weight: 600;
-    margin-top: 20px; }
-  .guarantee p {
-    font-size: 120%; }
-  .guarantee .signature {
-    display: block;
-    margin: 0 auto;
-    width: 160px; }
-
-.white-line {
-  display: inline-block;
-  height: 7px;
-  border-bottom: 4px solid #ffffff;
-  width: 50px;
-  position: relative;
-  top: -8px; }
-
 .sale {
   position: absolute;
   width: 70px;
@@ -158,6 +143,20 @@ strong {
   .popular .product {
     width: 98%; }
 
+.guarantee {
+  background-color: #ffffff;
+  width: 100%; }
+  .guarantee h3 {
+    color: #e87b15;
+    font-weight: 600;
+    margin-top: 20px; }
+  .guarantee p {
+    font-size: 120%; }
+  .guarantee .signature {
+    display: block;
+    margin: 0 auto;
+    width: 160px; }
+
 .as-seen-on {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -189,12 +188,12 @@ nav {
       border-right: none; }
 
 @media (min-width: 992px) {
+  .hero-green h1 {
+    font-size: 250%;
+    text-align: center; }
   .white-line {
     top: -12px;
     width: 200px; }
   .message {
     font-size: 215%;
-    line-height: 2.5; }
-  .hero-green h1 {
-    font-size: 250%;
-    text-align: center; } }
+    line-height: 2.5; } }

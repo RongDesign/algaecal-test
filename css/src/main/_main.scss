@@ -3,6 +3,7 @@
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
+// Global
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
@@ -13,6 +14,34 @@ h1,h2,h3,h4,h5,h6 {
 strong {
   font-weight: 600;
 }
+
+// Header
+.tap-to-talk {
+  font-weight: 600;
+  display: block;
+  font-size: 150%;
+  a {
+    color: $baby_blue;
+  }
+}
+.bone-health-specialist {
+  font-size: 105%;
+  line-height: 2;
+  img {
+    position: relative;
+    top: -2px;
+  }
+}
+.white-line {
+  display:inline-block;
+  height: 7px;
+  border-bottom: 4px solid $white;
+  width: 50px;
+  position: relative;
+  top:-8px;
+}
+
+// Hero
 .hero-green {
   background-image: url(../../../images/hero-green-01.png);
   background-position: center center;
@@ -21,15 +50,23 @@ strong {
     color: $white;
     font-size: 160%;
     &.intro {
-      span {
-      }
+    }
+    .custom-underlne {
+      background-image: url(../../../images/custom-underline.png);
+      background-position: left bottom;
+      background-repeat: repeat-x;
+      padding-bottom: 5px;
     }
   }
 }
+
+// Video Block
 .message {
   font-size: 130%;
   line-height: 1.2;
 }
+
+// Product
 .product {
   width: 80%;
   min-height: 100px;
@@ -99,53 +136,6 @@ strong {
     }
   }
 }
-.custom-underlne {
-  background-image: url(../../../images/custom-underline.png);
-  background-position: left bottom;
-  background-repeat: repeat-x;
-  padding-bottom: 5px;
-}
-.tap-to-talk {
-  font-weight: 600;
-  display: block;
-  font-size: 150%;
-  a {
-    color: $baby_blue;
-  }
-}
-.bone-health-specialist {
-  font-size: 105%;
-  line-height: 2;
-  img {
-    position: relative;
-    top: -2px;
-  }
-}
-.guarantee {
-  background-color: $white;
-  width: 100%;
-  h3 {
-    color: $orange;
-    font-weight: 600;
-    margin-top: 20px;
-  }
-  p {
-    font-size: 120%;
-  }
-  .signature {
-    display: block;
-    margin: 0 auto;
-    width: 160px;
-  }
-}
-.white-line {
-  display:inline-block;
-  height: 7px;
-  border-bottom: 4px solid $white;
-  width: 50px;
-  position: relative;
-  top:-8px;
-}
 .sale {
   position: absolute;
   width: 70px;
@@ -180,6 +170,27 @@ strong {
     width: 98%;
   }
 }
+
+// Guarantee Block
+.guarantee {
+  background-color: $white;
+  width: 100%;
+  h3 {
+    color: $orange;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  p {
+    font-size: 120%;
+  }
+  .signature {
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+  }
+}
+
+// As seen on
 .as-seen-on {
   @include box-shadow(0,0,5px,$black_50);
   background-color: $white;
@@ -192,6 +203,8 @@ strong {
     line-height: 80px;
   }
 }
+
+// Reference
 .reference {
   h3 {
     color: $baby_blue;
@@ -200,6 +213,8 @@ strong {
     color: $baby_blue;
   }
 }
+
+// Footer
 nav {
   margin: 15px 0;
   li {
@@ -226,19 +241,23 @@ nav {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .white-line {
-    top: -12px;
-    width: 200px;
-  }
-  .message {
-    font-size: 215%;
-    line-height: 2.5;
-  }
+
+  // Hero
   .hero-green {
     h1 {
       font-size: 250%;
       text-align: center;
     }
+  }
+  .white-line {
+    top: -12px;
+    width: 200px;
+  }
+  
+  // Video Area
+  .message {
+    font-size: 215%;
+    line-height: 2.5;
   }
 }
 
