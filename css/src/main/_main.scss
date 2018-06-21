@@ -65,6 +65,12 @@ strong {
   font-size: 130%;
   line-height: 1.2;
 }
+.play-video {
+  cursor: pointer;
+  &:hover {
+    opacity: .8;
+  }
+}
 
 // Product
 .product {
