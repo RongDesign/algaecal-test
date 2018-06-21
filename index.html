@@ -49,13 +49,30 @@
       <div class="play-video">
         <img class="img-fluid" src="images/video-play-button.png" width="965" height="543" alt=""/>
       </div>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+<div class="wistia_embed wistia_async_cecdwaq3dz" style="width:100%;height:100%;display: none;">&nbsp;</div>
+<script>
+window._wq = window._wq || [];
+
+// target our video by the first 3 characters of the hashed ID
+_wq.push({ id: "cecdwaq3dz", onReady: function(video) {
+  // at 10 seconds, do something amazing
+  video.bind('secondchange', function(s) {
+    if (s >= 132) {
+      // Insert code to do something amazing here
+      $(".products").css({"display":"flex"});
+    }
+  });
+}});
+
+</script>
     </div>
   </div>
 </div>
 
 <!-- PRODUCT -->
 <div class="container mt-5 mb-5">
-  <div class="row">
+  <div class="row products">
     <div class="col-sm-12 col-md-12 col-lg-4">
       <div class="product text-center my-4 p-4">
         <div class="sale">20% <span>Off</span></div>
@@ -215,6 +232,4 @@
 <script src="js/dist/main/main.js"></script>
 
 <!-- VIDEO JS -->
-<script src="http://fast.wistia.com/embed/medias/cecdwaq3dz.jsonp" async></script>
-<script src="http://fast.wistia.com/assets/external/E-v1.js" async></script>
 </html>

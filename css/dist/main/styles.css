@@ -54,6 +54,9 @@ strong {
   .play-video:hover {
     opacity: .8; }
 
+.products {
+  display: none; }
+
 .product {
   width: 80%;
   min-height: 100px;

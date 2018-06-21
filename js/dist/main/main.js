@@ -13,15 +13,27 @@ request.onload = function () {
 };
 request.send();
 
+// ALGAECAL VIDEO CALL
+var video_request = new XMLHttpRequest();
+video_request.open('GET', 'http://fast.wistia.com/oembed?url=http%3A%2F%2Fhome.wistia.com%2Fmedias%2Fcecdwaq3dz', true);
+video_request.onload = function () {
+  "use strict";
+  var data = JSON.parse(this.response);
+  data.thumbnail_url = '/image/video-play-button.png';
+};
+video_request.send();
+
+
 // CHECK BUSINESS HOURS (BASIC: 7-4)
 var date = new Date();
 var day = date.getDay();
 var daystring = parseInt(day);
 var hour = new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles", hour:'2-digit', hour12: false});
-console.log(hour);
+var hourstring = parseInt(hour);
+console.log(hourstring);
 console.log(daystring);
 
-  if(hour > 7 && hour < 4) {
+  if(hourstring > 7 && hourstring < 16) {
      $(".bone-health-specialist").show();
   } else {
      $(".bone-health-specialist").hide();
@@ -30,6 +42,9 @@ console.log(daystring);
 // VIDEO LINK
 $('.play-video').click(function() {
   "use strict";
-  $(this).html('<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_cecdwaq3dz videoFoam=true " style="height:100%;width:100%">&nbsp;</div></div></div>');
+  $('.play-video img').hide();
   $(this).removeClass('play-video');
+  $('.wistia_embed').show();
 });
+
+// PRODUCT SHOW
