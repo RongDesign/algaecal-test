@@ -1,0 +1,23 @@
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+$black: #000000;
+$black_50: rgba(0,0,0,0.5);
+$white: #ffffff;
+$orange: #e87b15;
+$grey: #757575;
+$green: #4c813d;
+$dark_green: #25875b;
+$baby_blue: #008ba4;
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');

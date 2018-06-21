@@ -1,1 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 /* CSS Document */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif; }
+
+strong {
+  font-weight: 600; }
+
+.hero-green {
+  background-image: url(../../../images/hero-green-01.png);
+  background-position: center center;
+  background-size: 100% auto; }
+  .hero-green h1 {
+    color: #ffffff;
+    font-size: 160%; }
+
+.message {
+  font-size: 130%;
+  line-height: 1.2; }
+
+.product {
+  width: 80%;
+  min-height: 100px;
+  margin: auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: relative; }
+  .product p {
+    color: #008ba4; }
+  .product .price {
+    display: inline-block;
+    font-size: 250%;
+    font-weight: 600; }
+    .product .price sup {
+      top: -9px;
+      font-size: 60%; }
+    .product .price .currency {
+      font-size: 40%;
+      float: right;
+      text-decoration: underline;
+      margin: 13px 0 0 10px;
+      display: inline-block; }
+  .product .day {
+    background-image: url(../../../images/per-day-background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-weight: 100; }
+    .product .day strong {
+      font-weight: 600; }
+  .product .add-to-cart {
+    display: block;
+    background-color: #4c813d;
+    color: #ffffff;
+    border-radius: 4px;
+    border-bottom: 8px solid #25875b;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+    padding: 3px 25px;
+    margin-top: 20px;
+    font-weight: 100; }
+    .product .add-to-cart img {
+      position: absolute;
+      left: -15px;
+      top: -10px; }
+    .product .add-to-cart .arrow-right {
+      background-image: url(../../../images/triangle-button.png);
+      background-size: cover;
+      display: block;
+      height: 12px;
+      width: 12px;
+      float: right;
+      margin: 6px 0 0 5px; }
+    .product .add-to-cart:hover {
+      text-decoration: none;
+      background-color: #000000;
+      border-bottom-color: #757575; }
+
+.custom-underlne {
+  background-image: url(../../../images/custom-underline.png);
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  padding-bottom: 5px; }
+
+.tap-to-talk {
+  font-weight: 600;
+  display: block;
+  font-size: 150%; }
+  .tap-to-talk a {
+    color: #008ba4; }
+
+.bone-health-specialist {
+  font-size: 105%;
+  line-height: 2; }
+  .bone-health-specialist img {
+    position: relative;
+    top: -2px; }
+
+.guarantee {
+  background-color: #ffffff;
+  width: 100%; }
+  .guarantee h3 {
+    color: #e87b15;
+    font-weight: 600;
+    margin-top: 20px; }
+  .guarantee p {
+    font-size: 120%; }
+  .guarantee .signature {
+    display: block;
+    margin: 0 auto;
+    width: 160px; }
+
+.white-line {
+  display: inline-block;
+  height: 7px;
+  border-bottom: 4px solid #ffffff;
+  width: 50px;
+  position: relative;
+  top: -8px; }
+
+.sale {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: -30px;
+  right: -30px;
+  text-align: center;
+  border-radius: 90px;
+  background-color: #e87b15;
+  color: #ffffff;
+  line-height: 1.1;
+  padding: 18px;
+  font-size: 130%;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  .sale span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 80%; }
+
+.popular {
+  background-color: #008ba4; }
+  .popular .most {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+    font-size: 100%;
+    padding: 0; }
+  .popular .product {
+    width: 98%; }
+
+.as-seen-on {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff; }
+  .as-seen-on h3 {
+    background-color: #4c813d;
+    color: #ffffff; }
+  .as-seen-on .col-3 {
+    vertical-align: middle;
+    line-height: 80px; }
+
+.reference h3 {
+  color: #008ba4; }
+
+.reference a {
+  color: #008ba4; }
+
+nav {
+  margin: 15px 0; }
+  nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 8px 0 5px;
+    border-right: 1px solid #000000;
+    line-height: 1;
+    color: #757575; }
+    nav li:last-child {
+      border-right: none; }
+
+@media (min-width: 992px) {
+  .white-line {
+    top: -12px;
+    width: 200px; }
+  .message {
+    font-size: 215%;
+    line-height: 2.5; }
+  .hero-green h1 {
+    font-size: 250%;
+    text-align: center; } }
