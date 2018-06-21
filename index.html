@@ -58,7 +58,7 @@ window._wq = window._wq || [];
 _wq.push({ id: "cecdwaq3dz", onReady: function(video) {
   // at 10 seconds, do something amazing
   video.bind('secondchange', function(s) {
-    if (s >= 132) {
+    if (s >= 133) {
       // Insert code to do something amazing here
       $(".products").css({"display":"flex"});
     }
@@ -72,7 +72,7 @@ _wq.push({ id: "cecdwaq3dz", onReady: function(video) {
 
 <!-- PRODUCT -->
 <div class="container mt-5 mb-5">
-  <div class="row products">
+  <div class="row products" id="products">
     <div class="col-sm-12 col-md-12 col-lg-4">
       <div class="product text-center my-4 p-4">
         <div class="sale">20% <span>Off</span></div>
@@ -82,7 +82,7 @@ _wq.push({ id: "cecdwaq3dz", onReady: function(video) {
         <img class="img-fluid" src="images/3-month-supply.png" width="222" height="135" alt=""/>
         <div class="price"><sup>$</sup>233 <span class="currency">USD</span></div>
         <div class="day">Only <strong><sup>$</sup>2.58</strong>/Day!</div>
-        <a class="add-to-cart" href="#">
+        <a class="add-to-cart" href="https://www.algaecal.com/product/bone-builder-packs/">
           <img src="images/7-year-guarantee.png" width="60" height="60" alt=""/> Add to Cart <span class="arrow-right"></span>
         </a>
       </div>
@@ -99,7 +99,7 @@ _wq.push({ id: "cecdwaq3dz", onReady: function(video) {
             <img class="img-fluid" src="images/6-month-supply.png" width="255" height="139" alt=""/>
             <div class="price"><sup>$</sup>337 <span class="currency">USD</span></div>
             <div class="day">Only <strong><sup>$</sup>2.09</strong>/Day!</div>
-            <a class="add-to-cart" href="#">
+            <a class="add-to-cart" href="https://www.algaecal.com/product/bone-builder-packs/">
               <img src="images/7-year-guarantee.png" width="60" height="60" alt=""/> Add to Cart <span class="arrow-right"></span>
             </a>
           </div>
@@ -115,7 +115,7 @@ _wq.push({ id: "cecdwaq3dz", onReady: function(video) {
         <img class="img-fluid" src="images/12-month-supply.png" width="245" height="140" alt=""/>
         <div class="price"><sup>$</sup>717 <span class="currency">USD</span></div>
         <div class="day">Only <strong><sup>$</sup>1.97</strong>/Day!</div>
-        <a class="add-to-cart" href="#">
+        <a class="add-to-cart" href="https://www.algaecal.com/product/bone-builder-packs/">
           <img src="images/7-year-guarantee.png" width="60" height="60" alt=""/> Add to Cart <span class="arrow-right"></span>
         </a>
       </div>
@@ -142,7 +142,7 @@ _wq.push({ id: "cecdwaq3dz", onReady: function(video) {
       <div class="guarantee py-4 px-3">
         <img class="mx-auto d-block" src="images/7-year-guarantee.png" width="150" height="150" alt=""/>
         <h3 class="">Stronger Bones For 7 Years Guarantee</h3>
-        <p>When you follow directions for use of AlgaeCal Plus and Strontium Boost - we guarantee you will see increased bone density in EVERY follow-up bone scan you have while using these 2 products - or we will refund every penny you paid for our products between your scan, This guarantee extends to every scan you have for the next 7 years! Also, if you are unsatisfied at anytime you can return my product for a full refund, no questions asked! <a>Click Here for Details</a></p>
+        <p>When you follow directions for use of AlgaeCal Plus and Strontium Boost - we guarantee you will see increased bone density in EVERY follow-up bone scan you have while using these 2 products - or we will refund every penny you paid for our products between your scan, This guarantee extends to every scan you have for the next 7 years! Also, if you are unsatisfied at anytime you can return my product for a full refund, no questions asked! <a href="#" data-toggle="modal" data-target="#exampleModal">Click Here for Details</a></p>
         <img class="d-block mx-auto mt-4" src="images/dean-neuls.png" width="191" height="145" alt=""/>
         <div class="signature">
           <strong>Dean Neuls</strong><br>
@@ -197,6 +197,23 @@ _wq.push({ id: "cecdwaq3dz", onReady: function(video) {
     </div>
   </div>
 </div>
+<div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Stronger Bones For 7 Years Guarantee</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- REFERENCES -->
 <div class="container mb-5 reference">
@@ -209,6 +226,21 @@ _wq.push({ id: "cecdwaq3dz", onReady: function(video) {
         <li><a href="https://www.algaecal.com/expert-insights/prescription-drugs-that-cause-osteoporosis/">https://www.algaecal.com/expert-insights/prescription-drugs-that-cause-osteoporosis/</a></li>
       </ol>
       <a href="#">View Full Reference List...</a>
+    </div>
+  </div>
+</div>
+  
+<!-- BUY NOW -->
+<div class="container mb-5 buy-now">
+  <div class="row">
+    <div class="col-5">
+    </div>
+    <div class="col-3">
+      <a class="add-to-cart" href="#products">
+        <img src="images/7-year-guarantee.png" width="60" height="60" alt=""/> Buy Now <span class="arrow-right"></span>
+      </a>
+    </div>
+    <div class="col-4">
     </div>
   </div>
 </div>

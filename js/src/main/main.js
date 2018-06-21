@@ -13,7 +13,18 @@ request.onload = function () {
 };
 request.send();
 
-// ALGAECAL VIDEO CALL
+var guarantee_request = new XMLHttpRequest();
+guarantee_request.open('GET', 'https://www.algaecal.com/wp-json/acf/v3/options/options/7yr_full_copy', true);
+guarantee_request.onload = function () {
+  "use strict";
+  var data = JSON.parse(this.response);
+  if (guarantee_request.status >= 200 && guarantee_request.status < 400) {
+      $( ".modal-body" ).html(data['7yr_full_copy']);
+    }
+};
+guarantee_request.send();
+
+// WISTIA VIDEO CALL
 var video_request = new XMLHttpRequest();
 video_request.open('GET', 'http://fast.wistia.com/oembed?url=http%3A%2F%2Fhome.wistia.com%2Fmedias%2Fcecdwaq3dz', true);
 video_request.onload = function () {

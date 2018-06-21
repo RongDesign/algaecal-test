@@ -111,39 +111,7 @@ strong {
       font-weight: 600;
     }
   }
-  .add-to-cart {
-    display: block;
-    background-color: $green;
-    color: $white;
-    border-radius: 4px;
-    border-bottom: 8px solid $dark_green;
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    text-align: right;
-    padding: 3px 25px;
-    margin-top: 20px;
-    font-weight: 100;
-    img {
-      position: absolute;
-      left: -15px;
-      top: -10px;
-    }
-    .arrow-right {
-      background-image: url(../../../images/triangle-button.png);
-      background-size: cover;
-      display: block;
-      height: 12px;
-      width: 12px;
-      float: right;
-      margin: 6px 0 0 5px;
-    }
-    &:hover {
-      text-decoration: none;
-      background-color: $black;
-      border-bottom-color: $grey;
-    }
-  }
+
 }
 .sale {
   position: absolute;
@@ -163,6 +131,40 @@ strong {
     display: block;
     text-transform: uppercase;
     font-size: 80%;
+  }
+}
+.add-to-cart {
+  display: block;
+  background-color: $green;
+  color: $white;
+  border-radius: 4px;
+  border-bottom: 8px solid $dark_green;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  text-align: right;
+  padding: 3px 25px;
+  margin-top: 20px;
+  font-weight: 100;
+  img {
+    position: absolute;
+    left: -15px;
+    top: -10px;
+  }
+  .arrow-right {
+    background-image: url(../../../images/triangle-button.png);
+    background-size: cover;
+    display: block;
+    height: 12px;
+    width: 12px;
+    float: right;
+    margin: 6px 0 0 5px;
+  }
+  &:hover {
+    text-decoration: none;
+    background-color: $black;
+    border-bottom-color: $grey;
+    color: $white;
   }
 }
 .popular {
@@ -196,6 +198,11 @@ strong {
     display: block;
     margin: 0 auto;
     width: 160px;
+  }
+}
+.modal-body {
+  img {
+    max-width: 100%;
   }
 }
 
